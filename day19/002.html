@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타입</title>
+</head>
+<body>
+  <form id="myform">
+    아이디:<input type="text" value="spring" name="name"><br>
+    비밀번호:<input type="password" value="1234" name="pwd"><br>
+  </form>
+  <script>
+    // 서버로 전달하는 형식 : urlencoded 형식
+    // ?이름=값&이름=값
+    // ?name=spring&pwd=1234
+    const frm = {
+      name:"spring", pwd:"1234"
+    };
+    // JS 객체를 서버로 넘기는 형식 : JSON
+    console.log(JSON.stringify(frm));
+  </script>
+</body>
+</html>

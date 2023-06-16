@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 타입은 JS 가 판단 => 변수에는 무엇이든 저장할 수 있다.
+    const f = function sum() {
+      console.log('함수를 저장하는 변수');
+    }
+    console.log(typeof f);
+    f();
+    const f2 = function() {
+      console.log('익명 함수');
+    }
+    f2();
+    (function() {
+      console.log('실행')
+    })()
+  </script>
+</body>
+</html>
